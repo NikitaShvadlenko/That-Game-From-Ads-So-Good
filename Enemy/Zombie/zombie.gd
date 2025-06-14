@@ -7,6 +7,7 @@ extends CharacterBody2D
 var knockback_velocity := Vector2.ZERO
 
 func _ready() -> void:
+	_update_health()
 	$AnimatedSprite2D.play("default")
 
 func _physics_process(delta):
