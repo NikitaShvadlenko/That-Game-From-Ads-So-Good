@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://dvyt5a0rym47v"]
 
 [ext_resource type="Texture2D" uid="uid://bh1hvcv2laxsf" path="res://Assets/kenney_platformer-characters/PNG/Soldier/Poses/soldier_action2.png" id="1_2emt6"]
-[ext_resource type="Script" uid="uid://dhqaeamsmguw7" path="res://Zombie/zombie.gd" id="1_7ghuh"]
+[ext_resource type="Script" uid="uid://dhqaeamsmguw7" path="res://Enemy/Zombie/zombie.gd" id="1_7ghuh"]
 [ext_resource type="Texture2D" uid="uid://dn3magilaarnv" path="res://Assets/kenney_platformer-characters/PNG/Soldier/Poses/soldier_action1.png" id="2_7ghuh"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_5uf83"]

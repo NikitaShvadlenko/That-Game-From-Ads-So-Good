@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://b14eanpw6brhu"]
+
+[ext_resource type="PackedScene" uid="uid://cur5ol81gq1p6" path="res://Player/Player.tscn" id="1_1q67n"]
+[ext_resource type="PackedScene" uid="uid://dvyt5a0rym47v" path="res://Enemy/Zombie/Zombie.tscn" id="2_bl2xt"]
+[ext_resource type="PackedScene" uid="uid://djjsxch2kw3ll" path="res://ZombieSpawner/ZombieSpawner.tscn" id="3_yy7ei"]
+[ext_resource type="PackedScene" uid="uid://c6j71pgnbs5w8" path="res://GameManager/GameManager.tscn" id="4_b7uiw"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_1q67n")]
+position = Vector2(-161, 553)
+
+[node name="Zombie" parent="." instance=ExtResource("2_bl2xt")]
+position = Vector2(-120, -594)
+
+[node name="ZombieSpawner" parent="." instance=ExtResource("3_yy7ei")]
+position = Vector2(1, -647)
+
+[node name="GameManager" parent="." instance=ExtResource("4_b7uiw")]

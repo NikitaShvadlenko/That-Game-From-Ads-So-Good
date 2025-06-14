@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Game from ads"
-run/main_scene="uid://cur5ol81gq1p6"
+run/main_scene="uid://b14eanpw6brhu"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
