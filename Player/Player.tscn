@@ -1,0 +1,36 @@
+[gd_scene load_steps=7 format=3 uid="uid://cur5ol81gq1p6"]
+
+[ext_resource type="Script" uid="uid://bqh6pwq7erk4m" path="res://Player/player.gd" id="1_kne1u"]
+[ext_resource type="PackedScene" uid="uid://8uexambcgpyw" path="res://Bullet/Bullet.tscn" id="2_ddoul"]
+[ext_resource type="Texture2D" uid="uid://deye6te1ytqi" path="res://Assets/kenney_platformer-characters/PNG/Player/Poses/player_fall.png" id="2_e80uo"]
+[ext_resource type="Texture2D" uid="uid://dr8ars0tv3a7a" path="res://Assets/kenney_platformer-characters/PNG/Player/Poses/player_hurt.png" id="3_cxr5p"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tdg3f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_e80uo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_cxr5p")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dtqjt"]
+radius = 48.0937
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+collision_mask = 2
+script = ExtResource("1_kne1u")
+bullet_scene = ExtResource("2_ddoul")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_tdg3f")
+frame = 1
+frame_progress = 0.220195
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_dtqjt")

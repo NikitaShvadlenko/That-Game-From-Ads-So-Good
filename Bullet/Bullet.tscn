@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://8uexambcgpyw"]
+
+[ext_resource type="Script" uid="uid://cqpua65em46rq" path="res://Bullet/bullet.gd" id="1_qratc"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v7qj8"]
+radius = 2.0
+height = 12.0
+
+[node name="Bullet" type="Area2D"]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("1_qratc")
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+color = Color(1, 0.85098, 0.239216, 1)
+polygon = PackedVector2Array(0, 0, 4, 0, 4, -12, 0, -12)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, -6)
+shape = SubResource("CapsuleShape2D_v7qj8")

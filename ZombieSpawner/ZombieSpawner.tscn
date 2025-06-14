@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://djjsxch2kw3ll"]
+
+[ext_resource type="Script" uid="uid://qvwdqkrtcjlg" path="res://ZombieSpawner/zombie_spawner.gd" id="1_vrywq"]
+[ext_resource type="PackedScene" uid="uid://dvyt5a0rym47v" path="res://Zombie/Zombie.tscn" id="2_ja1vf"]
+
+[node name="ZombieSpawner" type="Node2D"]
+script = ExtResource("1_vrywq")
+zombie_scene = ExtResource("2_ja1vf")

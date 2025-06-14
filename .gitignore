@@ -1,0 +1,25 @@
+# Godot-generated cache and import metadata
+.import/
+*.import
+
+# Build presets and exports (can be re-generated)
+export_presets.cfg
+export.cfg
+
+# OS-specific junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Godot lock files
+*.godot/tmp/
+
+# Debug logs or auto-save scenes (optional)
+*.log
+*.tmp
+
+# Backup files (optional, if enabled in Godot)
+*.bak
+# Godot 4+ specific ignores
+.godot/
+/android/
