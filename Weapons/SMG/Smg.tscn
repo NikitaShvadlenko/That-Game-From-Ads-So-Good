@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://dpta8n8v0xxws"]
+
+[ext_resource type="Script" uid="uid://cloqo5al5givg" path="res://Weapons/SMG/smg.gd" id="1_balqw"]
+[ext_resource type="Texture2D" uid="uid://mljtrbfi88mq" path="res://Assets/stg_44_or_mp43_by_ashmo.png" id="2_ejigr"]
+[ext_resource type="PackedScene" uid="uid://8uexambcgpyw" path="res://Bullet/Bullet.tscn" id="2_xk2mi"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xk2mi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ejigr")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Smg" type="Node2D"]
+script = ExtResource("1_balqw")
+bullet_scene = ExtResource("2_xk2mi")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-2, 1)
+rotation = 1.55683
+scale = Vector2(0.277387, 0.346391)
+sprite_frames = SubResource("SpriteFrames_xk2mi")

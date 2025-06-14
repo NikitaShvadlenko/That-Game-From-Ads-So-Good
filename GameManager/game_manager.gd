@@ -2,6 +2,10 @@ extends Node
 
 class_name GameManager
 
+@export var fire_rate_multiplier := 0
+
+signal fire_rate_multiplier_changed(new_multiplier: float)
+
 func _on_bullet_hit(bullet: Node, target: Node, damage: float, from_position: Vector2, knockback: float) -> void:
 	if target.has_method("take_damage"):
 		target.take_damage(damage, from_position, knockback)

@@ -21,3 +21,4 @@ func _physics_process(delta: float) -> void:
 func _on_Bullet_body_entered(body: Node) -> void:
 	if is_instance_valid(body):
 		emit_signal("hit_target", self, body, damage, global_position, knockback_strength)
+		queue_free()
